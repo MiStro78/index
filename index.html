@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/animate.css">
+    <link rel="stylesheet" href="css/task.css">
+    <script>
+    window.addEventListener("load", function () {
+        const loader = document.getElementById("loader");
+
+        setTimeout(function () {
+            loader.classList.add("hide");
+        }, 500);
+    });
+</script>
+
+</head>
+<body>
+    <!-- Loader -->
+<div id="loader">
+    <div class="loader-logo">Mazza.</div>
+    <div class="spinner"></div>
+    <p>Loading...</p>
+</div>
+
+    <div class="header bg-slate-300 w-100">
+        <div class="nav">
+        <div class="nav1 wow flash">
+            <a href="#nav">Mazza.</a>
+        </div>
+        <div id="nav" class="nav2">
+            <a href="#nav">HOME</a>
+            <a href="#card">SHOP</a>
+            <a href="#featured">FEATURNED</a>
+            <a href="#info">PHOTOS</a>
+            <a href="#foot">ABOUT</a>
+        </div>
+        <div class="nav3">
+            <a href="http://"><img src="https://www.freeiconspng.com/uploads/search-icon-png-5.png" alt=""></a>
+            <a href="http://"><img src="https://static.vecteezy.com/system/resources/previews/019/787/018/original/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png" alt=""></a>
+            <a href="http://"><img src="https://static.vecteezy.com/system/resources/thumbnails/027/013/226/small_2x/three-dots-icon-vector.jpg" alt=""></a>
+        </div>
+    </div>
+    
+    <!-- slider -->
+<!-- <div id="slid" class="slider">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img class="d-block w-100"
+                     src="https://as2.ftcdn.net/v2/jpg/05/69/92/57/1000_F_569925785_wU7lBeJ6eAHzr8YxU23qq6SEaSavGMgD.jpg"
+                     alt="First slide">
+
+                <div class="slider-content">
+                    <p>Discover our latest fashion collection</p>
+                    <button>SHOP NOW</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100"
+                     src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhs5grAN_KHl-hDHV9lXAH1Hhslb_sVGcRTtW4F1oCNoTizYYnUgNkwRTwKru7cvUAiUoLe7paVvrbQkTW6nWpFW5KlJyO60hOJi0KnZup6hmvBUsofVmBHFIZcQD4X_9imQCHXoyW5bcU/s1600/CK01.jpg"
+                     alt="Second slide">
+
+                <div class="slider-content">
+                    <p>New styles made for you</p>
+                    <button>SHOP NOW</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100"
+                     src="https://fashiongonerogue.com/wp-content/uploads/igr/images/2011/8/2/sararcampaign5.jpg"
+                     alt="Third slide">
+
+                <div class="slider-content">
+                    <p>Simple. Modern. Beautiful.</p>
+                    <button>SHOP NOW</button>
+                </div>
+            </div>
+
+        </div>
+
+        <a class="carousel-control-prev"
+           href="#carouselExampleIndicators"
+           role="button"
+           data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next"
+           href="#carouselExampleIndicators"
+           role="button"
+           data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+</div>
+</div> -->
+<!-- Slider -->
+<div id="slid" class="slider">
+    <div id="carouselExampleIndicators"
+         class="carousel slide"
+         data-bs-ride="carousel"
+         data-bs-interval="3000"
+         data-bs-touch="true">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"></button>
+
+            <button type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+
+            <button type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img class="d-block w-100"
+                     src="https://as2.ftcdn.net/v2/jpg/05/69/92/57/1000_F_569925785_wU7lBeJ6eAHzr8YxU23qq6SEaSavGMgD.jpg"
+                     alt="Fashion collection">
+
+                <div class="slider-content">
+                    <p>Discover our latest fashion collection</p>
+                    <button>SHOP NOW</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100"
+                     src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhs5grAN_KHl-hDHV9lXAH1Hhslb_sVGcRTtW4F1oCNoTizYYnUgNkwRTwKru7cvUAiUoLe7paVvrbQkTW6nWpFW5KlJyO60hOJi0KnZup6hmvBUsofVmBHFIZcQD4X_9imQCHXoyW5bcU/s1600/CK01.jpg"
+                     alt="New fashion styles">
+
+                <div class="slider-content">
+                    <p>New styles made for you</p>
+                    <button>SHOP NOW</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100"
+                     src="https://fashiongonerogue.com/wp-content/uploads/igr/images/2011/8/2/sararcampaign5.jpg"
+                     alt="Modern fashion">
+
+                <div class="slider-content">
+                    <p>Simple. Modern. Beautiful.</p>
+                    <button>SHOP NOW</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Previous -->
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <!-- Next -->
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+</div>
+
+<!-- cards -->
+<div id="card" class="cards">
+    <div class="card wow bounceInLeft">
+    <a href=""><img src="https://i.pinimg.com/originals/f4/02/5a/f4025a5fbf27aa5d1db565bc60331fd9.jpg" alt=""><p>Mens Day</p></a>
+</div>
+    <div class="card wow bounceInDown">
+        <a href=""><img src="https://www.skagen.com/on/demandware.static/-/Library-Sites-SkagenSharedLibrary/default/dw14e08b12/2022/FA22/set_0928_city/M3.jpg" alt=""><p>Both</p></a>
+    </div>
+    <div class="card wow bounceInRight">
+        <a href=""><img src="https://medias.spotern.com/spots/w640/300/300986-1581525622.jpg" alt=""><p>Womans Day</p></a>
+    </div>
+</div>
+<!-- featured -->
+<div id="featured" class="featured wow bounceIn">
+    <h6>More Items Featured</h6>
+    <h2>Featured Products</h2>
+    <p>______</p>
+</div>
+<div id="shirt" class="cards1">
+    <div class="card1 wow bounceInLeft">
+    <a href=""><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/bea742183796743.654630146f933.jpg" alt=""></a>
+    <h5>T-Shirts</h5>
+    <p>$14.99</p>
+</div>
+    <div id="Geuns" class="card1 wow bounceInDown">
+        <a href=""><img src="https://cdn.platform.next/common/items/default/default/itemimages/3_4Ratio/product/lge/106781s8.jpg?im=Resize,width=750" alt=""></a>
+        <h5>Geuns</h5>
+    <p>$19.99</p>
+    </div>
+    <div id="Bants" class="card1 wow bounceInRight">
+        <a href=""><img src="https://img.freepik.com/premium-photo/black-white-mens-shorts-mockup-front-view_1106493-252345.jpg" alt=""></a>
+        <h5>Bants</h5>
+    <p>$4.99</p>
+    </div>
+    <div id="Shoes" class="card1 wow bounceInRight">
+        <a href=""><img src="https://www.pixelstalk.net/wp-content/uploads/image12/Nike-3D-Wallpaper-with-Nike-running-shoes-in-vibrant-red.jpg" alt=""></a>
+        <h5>Shoes</h5>
+    <p>$24.99</p>
+</div>
+</div>
+<!-- photos -->
+<div class="photos">
+    <div class="photo1 wow bounceInLeft ">
+        <img src="https://blackberrys.com/cdn/shop/files/SNEAKERS_MAIN_BANNER_DESK.jpg?v=1742628902&width=600" alt="">
+        <h3>Shoes Mens Collection</h3>
+        <a href="http://">Shop Now</a>
+    </div>
+    <div class="photo2 wow bounceInRight">
+        <img src="https://img.freepik.com/premium-vector/up-40-percent-off-sticker-white-background-special-offer-sale-vector-illustration_573942-1096.jpg?w=360" alt="">
+    </div>
+</div>
+<!-- insta -->
+<div id="info" class="insta wow bounceIn">
+    <h2>Follow Us On Instagram</h2>
+    <h6>Mohamed_Khaled_50pp</h6>
+</div>
+<div  class="info">
+<div class="info1 wow bounceInLeft">
+        <img src="https://th.bing.com/th/id/R.04548f027d7136d8625add72c546c99d?rik=itk9xpu0dKI3WQ&pid=ImgRaw&r=0" alt=""></a>
+    </div>
+    <div class="info1 wow bounceInDown">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.bewejS-OrxYak0s5XkQApAHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt=""></a>
+    </div>
+    <div class="info1 wow bounceInUp">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.tNvkWlc6_rlKLg4MzWivywHaKC?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt=""></a>
+</div>
+    <div class="info1 wow bounceInRight">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.REjJLIkbWcSk4PxAPkJldQHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt=""></a>
+</div>
+
+</div>
+<div class="hard">
+    <div class="hard1 wow bounceIn">
+        <h4>Best Seller</h4>
+        <h5>____</h5>
+        <div class="hard2 wow bounceInLeft">
+            <img src="https://i.pinimg.com/originals/87/1e/2d/871e2d618a997de3beeeafdca387af95.png" alt="">
+            <div class="hard3">
+            <h6>T-shirt</h6>
+            <p>$29.99</p>
+             <a href="http://">Add To Card</a>
+            </div>
+        </div>
+        <div class="hard2 wow bounceInLeft">
+            <img src="https://static.esquire.de/0x98:930x796/768x576/images/2025-08/sneaker-adidas-herbst-2025-trend.png" alt="">
+            <div class="hard3">
+            <h6>Shoes</h6>
+            <p>$49.99</p>
+             <a href="http://">Add To Card</a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="hard1 wow bounceIn">
+        <h4>New Arrivals</h4>
+        <h5>____</h5>
+        <div class="hard2 wow bounceInDown">
+            <img src="https://cdn.clothbase.com/uploads/2b090cb2-6ad0-4ae9-9da5-cd09960ff732/clothbase_4064958589945_0288420_1693237891737.jpg" alt="">
+            <div class="hard3">
+            <h6>Jeans</h6>
+            <p>$34.99</p>
+            <a href="http://">Add To Card</a>
+        </div>
+    </div>
+    <div class="hard2">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.exAn0da_7uO5ElBz641ROQHaKW?r=0&w=732&h=1023&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+            <div class="hard3">
+            <h6>Skirt</h6>
+            <p>$19.99</p>
+            <a href="http://">Add To Card</a>
+        </div>
+    </div>
+    </div>
+    <div class="hard1 wow bounceIn">
+        <h4>Most Viewed</h4>
+        <h5>____</h5>
+        <div class="hard2 wow bounceInRight">
+            <img src="https://cms-cdn.thesolesupplier.co.uk/2024/03/sporty-rich-x-adidas-handball-spezial-auburn-brown-front.jpg" alt="">
+            <div class="hard3">
+            <h6>Sneaker</h6>
+            <p>$49.99</p>
+            <a href="http://">Add To Card</a>
+        </div>
+        </div>
+        <div class="hard2 wow bounceInRight">
+            <img src="https://img.freepik.com/fotos-premium/camiseta-maqueta-negra-moda-blanco_856660-2965.jpg" alt="">
+            <div class="hard3">
+            <h6>T-Shirt</h6>
+            <p>$24.99</p>
+            <a href="http://">Add To Card</a>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer id="foot" class="bg-black-950 text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+        <h6 class="text-uppercase font-weight-bold mb-4">About</h6>
+        <p class="">
+          Fashion is the way people express themselves through clothes, shoes, accessories, hairstyles, and colors. It can show a person’s personality, culture, and style.
+        </p>
+      </div>
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase font-weight-bold mb-4">Products</h6>
+        <p><a href="#shirt" class="text-white">T-Shirts</a></p>
+        <p><a href="#Geuns" class="text-white">Geuns</a></p>
+        <p><a href="#Bants" class="text-white">Bants</a></p>
+        <p><a href="#Shoes" class="text-white">Shoes</a></p>
+      </div>
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase font-weight-bold mb-4">Useful links</h6>
+        <p><a href="#" class="text-white">Your Account</a></p>
+        <p><a href="#" class="text-white">Become an Affiliate</a></p>
+        <p><a href="#" class="text-white">Shipping Rates</a></p>
+        <p><a href="#" class="text-white">Help</a></p>
+      </div>
+      <div class="col-md-4 col-lg-3 col-xl-3 mb-md-0 mb-4">
+        <h6 class="text-uppercase font-weight-bold mb-4">Contact</h6>
+        <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+        <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+        <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright text-center py-3">
+    © 2023 Copyright:
+    <a href="#" class="text-white"> Your Website</a>
+  </div>
+</footer>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+</body>
+</html>
